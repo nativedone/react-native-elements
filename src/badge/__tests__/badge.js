@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text } from 'react-native';
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import Badge from '../badge';
 
@@ -19,7 +19,7 @@ describe('Badge Component', () => {
   });
 
   it('should render badge.element if included', () => {
-    const foo = (<Text title='foo' />);
+    const foo = <Text title="foo" />;
     const component = shallow(<Badge badge={{ element: foo }} />);
 
     expect(component.length).toBe(1);

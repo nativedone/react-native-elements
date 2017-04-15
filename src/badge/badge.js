@@ -11,8 +11,8 @@ const Badge = props => {
   if (badge.element) return badge.element;
 
   return (
-    <View style={[ styles.badge, badge.badgeContainerStyle ]}>
-      <Text style={[ styles.text, badge.badgeTextStyle ]}>{badge.value}</Text>
+    <View style={[styles.badge, badge.badgeContainerStyle]}>
+      <Text style={[styles.text, badge.badgeTextStyle]}>{badge.value}</Text>
     </View>
   );
 };
@@ -30,12 +30,12 @@ styles = StyleSheet.create({
     backgroundColor: '#444',
     borderRadius: 20,
     position: 'absolute',
-    right: 30
+    right: 30,
   },
   text: {
     fontSize: 14,
-    color: 'white'
-  }
+    color: 'white',
+  },
 });
 
 export default Badge;
